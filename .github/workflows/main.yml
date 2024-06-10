@@ -1,4 +1,4 @@
-name: Node.js ci
+name: Ejemplo CI
 
 on:
   push:
@@ -27,6 +27,9 @@ jobs:
 
     - name: Verify Jest installation
       run: npx jest --version
+
+    - name: Adjust permissions
+      run: chmod -R 755 node_modules
 
     - name: Run tests
       run: npx jest
