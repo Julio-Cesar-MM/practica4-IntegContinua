@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Node.js ci
 
 on:
   push:
@@ -6,7 +6,8 @@ on:
       - main
       - dev
   pull_request:
-    branches: [main]
+    branches: 
+      - main
 
 jobs:
   build:
